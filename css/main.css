@@ -3,9 +3,24 @@ html {
 }
 
 body {
-  background-color: #fb6c76;
+  background: linear-gradient(-45deg, #fb6c76, #ff8a95, #ffa07a, #ff6b9d);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   font-family: 'Raleway', sans-serif;
   color: #f2f2f2;
+  min-height: 100vh;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
